@@ -31,8 +31,14 @@ body {
 
 .nav-bg {
         background-color: var(--secundario);
+        padding: 1rem;
 }
 
 .navegacion-principal {
     /* text-align: center; */
+}
+
+.navegacion-principal a {
+    color: var(--blanco);
+    text-decoration: none;
 }
