@@ -25,7 +25,7 @@ body {
 }
 
 .contenedor {
-    width: 120rem;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
@@ -35,7 +35,16 @@ body {
 
 .navegacion-principal {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal {
+        
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .navegacion-principal a {
@@ -50,3 +59,5 @@ body {
     background-color: var(--primario);
     color: var(--oscuro);
 }
+
+
