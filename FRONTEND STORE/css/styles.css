@@ -80,6 +80,7 @@ h3 {
     background-color: var(--primarioOscuro);
     padding: 1rem 0;
     margin-top: 2rem;
+    line-height: 1.2;
 }
 
 .footer__texto {
@@ -224,11 +225,16 @@ h3 {
 
 /** Pagina del Producto **/ 
 
+.camisa {
+    line-height: 1.2;
+}
+
 @media (min-width: 768px) {
     .camisa {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
+        line-height: 1.2;
     }
 }
 
