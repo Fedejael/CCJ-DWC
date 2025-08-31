@@ -19,7 +19,7 @@ html {
 body {
     font-family: var(--fuenteParrafos);
     font-size: 1.6rem;
-    line-height: 2rem;
+    line-height: 2;
 }
 
 /** Globales **/
@@ -68,4 +68,20 @@ img {
 
 .centrar-texto {
     text-align: center;
+}
+
+/** Header **/ 
+
+.header {
+    background-image: url(../img/banner.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header__texto {
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 5rem;
 }
