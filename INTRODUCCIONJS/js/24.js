@@ -29,6 +29,22 @@ for (let i = 0; i < carrito.length; i++) {
  
 // While Loop
 
+/* let i = 20; // Indice
 
+while(i < 10) { // Condición
+
+    console.log("Desde el while loop")
+
+    i++; // Incremento
+} */
 
 // Do While Loop
+
+let i = 0;
+
+do {
+    console.log(i);
+
+    i++;
+    
+} while(i < 10);
