@@ -11,10 +11,26 @@ function descargarNuevosClientes() {
     });
 }
 
+function descargarUltimosPedidos() {
+    return new Promise (resolve => {
+        console.log('Descargando pedidos... espere...')
+
+        setTimeout( () => {
+            resolve('Los Pedidos fueron Descargados')
+        }, 3000 );
+
+    });
+}
+
 async function app() {
     try {
-        const resultado = await descargarNuevosClientes();
-        console.log(resultado);
+/*         const clientes = await descargarNuevosClientes();
+        const pedidos = await descargarUltimosPedidos();
+        console.log(clientes);
+        console.log(pedidos); */
+
+    const resultado = await Promise.all([ descargarNuevosClientes(), descargarUltimosPedidos() ]);
+    console.log(resultado);
     } catch (error) {
         console.log(error);
     }
