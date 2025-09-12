@@ -32,3 +32,26 @@ navegacion.appendChild(nuevoEnlace);
 
 
 console.log(nuevoEnlace);
+
+
+// Eventos 
+
+console.log(1);
+
+window.onload = function () {
+    console.log(3);
+}
+
+window.addEventListener('load', function() { // LOAD espera a que el JavaScript y los archivos que dependen del HTML estén listos.
+    console.log(2);
+})
+
+document.addEventListener('DOMContentLoaded', function () { // Solo espera por el HTML, pero no espera CSS o imagenes
+    console.log(4);
+})
+
+console.log(5);
+
+window.onscroll = function() {
+    console.log('scrolling...');
+}
