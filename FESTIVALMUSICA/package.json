@@ -12,5 +12,8 @@
     "Gulp"
   ],
   "author": "Federico Canto",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.92.1"
+  }
 }
