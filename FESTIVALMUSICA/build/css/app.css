@@ -4,3 +4,15 @@ body {
   font-style: normal;
   background-color: aqua;
 }
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+}
