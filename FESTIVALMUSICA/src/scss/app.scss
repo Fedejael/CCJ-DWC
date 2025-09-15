@@ -1,14 +1,13 @@
-$Fuente_principal : "Montserrat", sans-serif;
-
+@use 'variables' as v;
 
 body {
-    font-family: $Fuente_principal;
+    font-family: v.$Fuente_principal;
     font-optical-sizing: auto;
     font-style: normal;
-    background-color: aqua;
+    color: v.$negro;
 }
 
-h1 {
+/* h1 {
     font-family: $Fuente_principal;
 }
 
@@ -18,4 +17,4 @@ p {
 
 a {
     font-family: $Fuente_principal;
-}
+} */
