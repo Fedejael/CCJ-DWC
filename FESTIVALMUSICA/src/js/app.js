@@ -1,6 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+    navegacionFija()
     crearGaleria()
 })
+
+function navegacionFija() {
+    const header = document.querySelector('.header')
+    const sobreFestival = document.querySelector('.sobre-festival')
+
+    window.addEventListener('scroll', function() {
+        if(sobreFestival.getBoundingClientRect().bottom < 1) {
+            header.classList.add('fixed')
+        } else {
+            header.classList.remove('fixed')
+        }
+    })
+}
 
 function crearGaleria() {
 
@@ -31,7 +46,14 @@ function mostrarImagen(i) {
     modal.classList.add("modal")
     modal.onclick = cerrarModal;
 
+    // Botón cerrar modal
+    const cerrarModalBtn = document.createElement('BUTTON')
+    cerrarModalBtn. textContent = 'X'
+    cerrarModalBtn.classList.add('btn-cerrar')
+    cerrarModalBtn.onclick = cerrarModal
+
     modal.appendChild(imagen)
+    modal.appendChild(cerrarModalBtn)
 
     // Agregar al HTML
     const body = document.querySelector('body')
