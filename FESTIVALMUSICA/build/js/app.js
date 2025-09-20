@@ -42,6 +42,7 @@ function mostrarImagen(i) {
 
 function cerrarModal() {
     const modal = document.querySelector('.modal')
+
     modal.classList.add('fade-out')
 
     setTimeout(() => {
@@ -49,5 +50,5 @@ function cerrarModal() {
 
         const body = document.querySelector('body')
         body.classList.remove('overflow-hidden')
-    }, 500);
+    }, 400);
 }
